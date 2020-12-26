@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import './styles/main.scss';
+import {TSKolubaraApp} from './tskolubara';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TSKolubaraApp/>
   </React.StrictMode>,
   document.getElementById('root')
 );
