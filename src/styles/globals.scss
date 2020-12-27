@@ -21,28 +21,33 @@ a {
   fill: white;
 }
 
-.search-menu-icon, .header-menu-icon {
+.search-menu-icon, .header-menu-icon, .search-modal-icon {
   color: white !important;
 }
 
 .header-menu-icon {
   margin-left: auto !important;
 }
+
 .loadingbar {
-  background-color: rgba(223,177,99,0.4)
+  background-color: rgba(223, 177, 99, 0.4)
 }
+
 .MuiLinearProgress-colorPrimary {
-  background-color: rgba(223,177,99,0.4)!important;
+  background-color: rgba(223, 177, 99, 0.4) !important;
 }
+
 .MuiLinearProgress-barColorPrimary {
-  background-color: rgba(223,177,99,1)!important;
+  background-color: rgba(223, 177, 99, 1) !important;
 }
+
 .MuiLinearProgress-colorSecondary {
-  background-color: rgba(255,255,255,0.4)!important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
 }
+
 .MuiLinearProgress-barColorSecondary {
-   background-color: white!important;
- }
+  background-color: white !important;
+}
 
 .header {
   z-index: 10;
@@ -110,7 +115,17 @@ a {
   }
 }
 
-.contact-field {
+.mobile-menu {
+  width: 250px;
+  height: 100%;
+  background-color: $primary;
+
+  .whiteColor {
+    color: white;
+  }
+}
+
+.contact-field, .search-field {
   margin-top: 20px !important;
   color: rgba(255, 255, 255, 0.7);
 
@@ -130,6 +145,7 @@ a {
     .MuiOutlinedInput-notchedOutline {
       border-color: $secondary;
     }
+
     &:hover {
       .MuiOutlinedInput-notchedOutline {
         border-color: $secondary;
@@ -145,10 +161,14 @@ a {
     &:hover {
       .MuiOutlinedInput-notchedOutline {
         border-color: rgba(255, 255, 255, 0.87);
+      }
     }
   }
+
 }
 
+.search-field {
+  margin-top: 3px !important;
 }
 
 .footer {
@@ -202,9 +222,9 @@ a {
 }
 
 .send-button {
-  display: flex!important;
-  margin: auto!important;
-  margin-top: 10px!important;
+  display: flex !important;
+  margin: auto !important;
+  margin-top: 10px !important;
 }
 
 .slider-frontpage {
@@ -329,16 +349,31 @@ section {
   display: flex;
 }
 
+.search-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-content {
+    background-color: $primary !important;
+    height: 145px;
+    padding: 50px 10px 10px;
+  }
+}
+
 .stats {
   padding-top: 50px;
+
   &-title {
-    color: $primary!important;
-    font-weight: bold!important;
-    margin-bottom: 20px!important;
+    color: $primary !important;
+    font-weight: bold !important;
+    margin-bottom: 20px !important;
   }
+
   &-item {
     height: 300px;
-    background-color: $primary!important;
+    background-color: $primary !important;
+
     span {
       color: $secondary;
       display: flex;
@@ -347,6 +382,7 @@ section {
       padding-top: 70px;
       justify-content: center;
     }
+
     div.text {
       color: white;
       text-align: center;
@@ -358,4 +394,74 @@ section {
     }
   }
 }
+
+.education-profiles {
+  background-color: $primary;
+  width: 100%;
+  height: 100%;
+
+  &-title {
+    color: $primary !important;
+    font-weight: bold !important;
+    margin-bottom: 20px !important;
+  }
+
+  &-header {
+    background-color: $primary;
+    color: white;
+  }
+
+  &-avatar {
+    background-color: $secondary !important;
+  }
+
+  &-picture {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-description {
+    background-color: $primary;
+    height: 240px;
+    .whiteColor {
+      color: white;
+    }
+  }
+
+  &-actions {
+    background-color: $primary;
+    color: white;
+  }
+  &-visibility {
+    color: white!important;
+    margin-left: auto!important;
+    font-size: .8rem!important;
+    .label-moreinfo {
+      padding-right: 10px;
+    }
+  }
+}
+
+.javne-nabavke {
+  padding-top: 50px;
+  h5 {
+    padding-top: 6px!important;
+  }
+  &-dot {
+    background-color: $primary!important;
+    height: 42px!important;
+    padding-top: 11px!important;
+    font-weight: bold;
+    font-size: 1rem;
+    color: $secondary!important;
+  }
+  &-content {
+    padding: 6px 16px;
+    background-color: $primary!important;
+    color: white!important;
+  }
+}
+
 

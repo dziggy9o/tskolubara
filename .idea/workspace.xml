@@ -2,33 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/context/api.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/context/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/context/loadingPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/layout/additionalMenu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/layout/footer/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/layout/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/layout/otherStuff.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/notifications/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/slider/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/fadeIn.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/globals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/svgs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/variable.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tskolubara.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/pages/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/pages/javnanabavka.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/context/api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/api.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/context/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +79,23 @@
       <workItem from="1608559890723" duration="19308000" />
       <workItem from="1608667381340" duration="605000" />
       <workItem from="1608746152664" duration="244000" />
+      <workItem from="1609012991138" duration="17707000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Header, Footer, middle">
+      <created>1609013089610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609013089610</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Header, Footer, middle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Header, Footer, middle" />
   </component>
 </project>

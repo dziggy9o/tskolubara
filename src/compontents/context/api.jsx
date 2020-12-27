@@ -7,6 +7,8 @@ export const API = {
   NOTIFICATIONS: `${BASE_API}items/obavestenja?status=published`,
   SLIDER: `${BASE_API}items/slajder`,
   SLIDER_FILES: `${BASE_API}items/slajder_files`,
+  JAVNE_NABAVKE: `${BASE_API}items/javne_nabavke`,
+  JAVNE_NABAVKE_FILES: `${BASE_API}items/javne_nabavke_files`,
 }
 
 export const fetchAPI = (url, setState, loader, setLoader) => {
