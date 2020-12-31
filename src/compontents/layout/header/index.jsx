@@ -4,14 +4,14 @@ import {
   AppBar,
   Backdrop,
   Fade,
+  Grid,
   Hidden,
   ListItemIcon,
   ListItemText,
   Modal,
   Paper,
   TextField,
-  Toolbar,
-  Grid
+  Toolbar
 } from "@material-ui/core";
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
@@ -74,7 +74,7 @@ export const Header = props => {
           <div className={'search-modal-content'}>
             <Grid container spacing={3}>
               <Grid item xs={9} md={11}>
-                <TextField classes={{root: 'search-field'}} size={'small'} id="outlined-basic" label="Претражи..." variant="outlined" fullWidth={true}/>
+                <TextField classes={{root: 'search-field'}} size={'small'} id="outlined-basic" label="Претражи..." variant="outlined" type="search" fullWidth={true}/>
               </Grid>
               <Grid item xs={3} md={1}>
                 <IconButton classes={{root: 'search-modal-icon'}} size={'medium'}>
@@ -99,7 +99,7 @@ export const Header = props => {
             component="nav"
             aria-labelledby="nested-list-subheader"
           >
-            <Link  to={'/'}>
+            <Link to={'/'}>
               <ListItem button classes={{root: 'whiteColor'}}>
                 <ListItemIcon classes={{root: 'whiteColor'}}>
                   <ChevronRight/>
@@ -117,7 +117,8 @@ export const Header = props => {
                     <ListItemText primary={item.label}/>
                   </ListItem>
                 </Link>
-              )})}
+              )
+            })}
           </List>
         </div>
       )

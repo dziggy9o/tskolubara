@@ -6,8 +6,8 @@ import AnimatedNumber from "animated-number-react";
 const statsList = [
   {number: 4, label: 'Подручија рада'},
   {number: 11, label: 'образовних профила'},
-  {number: 37, label: 'образовних профила'},
-  {number: 1006, label: 'ученика'},
+  {number: 37, label: 'oдељења'},
+  {number: 1032, label: 'ученика'},
 ]
 
 export const Stats = props => {

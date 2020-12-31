@@ -105,7 +105,7 @@ const EducationProfileList = [
     background: '/images/obrazovni-profili/ekonomija.jpg',
     icon      : <BarChart/>,
     list      : [
-      {name: 'Економски техничарЕкономски техничар'},
+      {name: 'Економски техничар'},
       {name: 'Финансијски техничар'},
     ]
   },

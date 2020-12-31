@@ -457,10 +457,16 @@ section {
     font-size: 1rem;
     color: $secondary!important;
   }
+  &-title-header {
+    color: $secondary!important;
+  }
   &-content {
     padding: 6px 16px;
     background-color: $primary!important;
     color: white!important;
+    .whiteColor {
+      color: white;
+    }
   }
 }
 
