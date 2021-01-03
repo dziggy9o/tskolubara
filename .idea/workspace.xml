@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/no_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/meta/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/context/api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/api.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/context/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/notifications/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/notifications/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/layout/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.scss" afterDir="false" />
     </list>
@@ -32,6 +33,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -85,7 +87,7 @@
       <workItem from="1609012991138" duration="24642000" />
       <workItem from="1609143648824" duration="10000" />
       <workItem from="1609181926046" duration="615000" />
-      <workItem from="1609424252537" duration="40404000" />
+      <workItem from="1609424252537" duration="49222000" />
     </task>
     <task id="LOCAL-00001" summary="Added Header, Footer, middle">
       <created>1609013089610</created>
@@ -115,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609424965119</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added news and edu profiles">
+      <created>1609671720029</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609671720029</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +135,7 @@
     <MESSAGE value="Created context for javne nabavke, added education profiles" />
     <MESSAGE value="Created page javna nabavka" />
     <MESSAGE value="Etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Etc" />
+    <MESSAGE value="added news and edu profiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added news and edu profiles" />
   </component>
 </project>

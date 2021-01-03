@@ -33,11 +33,11 @@ export const NewsWidget = props => {
 export const NewsCard = props => {
   return (
     <Card className={'news-widget-card'}>
-      {props.files
+      {props.slika ? props.files
         .filter(file => file.id === props.slika)
         .map((item, index) =>
           <div key={index} className={'news-widget-picture'} style={{backgroundImage: `url(${item.data.full_url})`}}/>
-        )}
+        ) : <div className={'news-widget-picture'} style={{backgroundImage: `url('/images/no_image.jpg')`}}/>}
       <Chip classes={{root: 'news-widget-date'}} label={props.datumFormatiran}/>
       <CardContent classes={{root: 'news-widget-description'}}>
         <Typography variant={'h5'}>{props.naslov}</Typography>
@@ -60,11 +60,11 @@ export const NewsCard = props => {
 export const NewsSinglePage = props => {
   return (
     <Container maxWidth={'xl'} disableGutters={true} classes={{root: 'news-singlePage'}}>
-      {props.files
+      {props.slika ? props.files
         .filter(file => file.id === props.slika)
         .map((item, index) =>
           <div key={index} className={'news-singlePage-picture'} style={{backgroundImage: `url(${item.data.full_url})`}}/>
-        )}
+        ) : <div  className={'news-singlePage-picture'} style={{backgroundImage: `url('/images/no_image.jpg')`}}/>}
       <Container maxWidth={'lg'}  classes={{root: 'news-singlePage-content'}}>
         <Typography classes={{root: 'news-singlePage-content-title'}} variant={'h5'}>{props.naslov}</Typography>
         <Grid container spacing={3}>

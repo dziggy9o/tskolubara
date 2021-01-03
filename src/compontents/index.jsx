@@ -7,3 +7,7 @@ export {Slider} from './slider'
 //Notifications
 
 export {Notifications} from './notifications'
+
+//Tags
+
+export {Tags} from './meta'

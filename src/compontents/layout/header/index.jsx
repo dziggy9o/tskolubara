@@ -131,6 +131,8 @@ export const Header = props => {
         <Container maxWidth={'xl'} disableGutters={true} classes={{root: 'top'}}>
           <Container maxWidth={'lg'} disableGutters={true} classes={{root: 'content'}}>
             <ButtonGroup aria-label="outlined primary button group">
+              <a href={'https://goo.gl/maps/D74WkZwaxDupgUWp6'} target={'new'}
+              >
               <Button
                 size="small"
                 startIcon={<LocationOn/>}
@@ -138,6 +140,8 @@ export const Header = props => {
                 Доситеја Обрадовића бр.6 Лазаревац
               </Hidden>
               </Button>
+              </a>
+              <a href={'tel:+381118123249'}>
               <Button
                 size="small"
                 startIcon={<Phone/>}
@@ -146,6 +150,7 @@ export const Header = props => {
                   011/8123-249
                 </Hidden>
               </Button>
+              </a>
             </ButtonGroup>
             <ButtonGroup style={{marginLeft: 'auto'}} aria-label="outlined primary button group">
               <Button
