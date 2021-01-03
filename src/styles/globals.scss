@@ -425,6 +425,7 @@ section {
   &-description {
     background-color: $primary;
     height: 240px;
+
     .whiteColor {
       color: white;
     }
@@ -434,40 +435,283 @@ section {
     background-color: $primary;
     color: white;
   }
+
   &-visibility {
-    color: white!important;
-    margin-left: auto!important;
-    font-size: .8rem!important;
+    color: white !important;
+    margin-left: auto !important;
+    font-size: .8rem !important;
+
     .label-moreinfo {
       padding-right: 10px;
+    }
+  }
+
+  &-singlePage {
+    position: relative;
+    margin-top: -40px;
+
+    &-picture {
+      width: 100%;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &-content {
+      &-title {
+        text-align: center;
+        background-color: $primary;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: $secondary;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-top: -30px !important;
+      }
+
+      &-text {
+        margin-top: 20px !important;
+        font-size: 1rem !important;
+        font-weight: normal !important;
+        text-align: justify;
+        text-justify: inter-word;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+
+    &-profiles-list {
+      background-color: $secondary !important;
+      margin-top: 20px;
+
+      .title {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: white;
+        padding: 8px;
+        background-color: $primary;
+        height: 42px;
+      }
+
+      .quicklinks {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 15px;
+        height: 100%;
+
+        .footer-title {
+          color: $secondary;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .blackColor {
+          color: $primary;
+        }
+      }
+
     }
   }
 }
 
 .javne-nabavke {
   padding-top: 50px;
+
   h5 {
-    padding-top: 6px!important;
+    padding-top: 6px !important;
   }
+
   &-dot {
-    background-color: $primary!important;
-    height: 42px!important;
-    padding-top: 11px!important;
+    background-color: $primary !important;
+    height: 42px !important;
+    padding-top: 11px !important;
     font-weight: bold;
     font-size: 1rem;
-    color: $secondary!important;
+    color: $secondary !important;
   }
+
   &-title-header {
-    color: $secondary!important;
+    color: $secondary !important;
   }
+
   &-content {
     padding: 6px 16px;
-    background-color: $primary!important;
-    color: white!important;
+    background-color: $primary !important;
+    color: white !important;
+
     .whiteColor {
       color: white;
     }
   }
 }
+
+.news {
+  &-widget {
+    &-title {
+      color: $primary !important;
+      font-weight: bold !important;
+      margin-bottom: 20px !important;
+    }
+
+    &-card {
+      background-color: $primary;
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    &-picture {
+      height: 200px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-date {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 20;
+      font-weight: bold;
+      background-color: $primary !important;
+      color: $secondary !important;
+    }
+
+    &-description {
+      background-color: $primary;
+      height: 170px;
+
+      h5 {
+        color: $secondary;
+        text-align: center;
+      }
+
+      h6 {
+        margin-top: 20px;
+        white-space: nowrap;
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 5px;
+      }
+    }
+
+
+    &-actions {
+      background-color: $primary;
+      color: white;
+    }
+
+    &-visibility {
+      color: white !important;
+      font-size: .8rem !important;
+
+      .label-moreinfo {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &-singlePage {
+    position: relative;
+    margin-top: -40px;
+
+    &-picture {
+      width: 100%;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+    }
+
+    &-content {
+      &-title {
+        text-align: center;
+        background-color: $primary;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: $secondary;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-top: -30px !important;
+      }
+
+      &-text {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+
+    &-notifications {
+      background-color: $secondary !important;
+      margin-top: 20px;
+
+      .title {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.7rem;
+        color: white;
+        padding: 5px;
+        background-color: $primary;
+        height: 42px;
+      }
+
+      .content {
+        position: relative;
+        height: 500px;
+
+        &__item {
+          h2 {
+            text-align: center;
+            padding: 10px;
+          }
+
+          p {
+            margin: 0;
+            padding: 10px;
+            font-size: 1rem;
+          }
+        }
+
+        &__controls {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+
+        &__right, &__left {
+          color: white !important;
+          background-color: $primary !important;
+          margin: 5px !important;
+
+          &:disabled {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.firstWord {
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
 
 

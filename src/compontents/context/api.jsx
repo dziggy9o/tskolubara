@@ -9,6 +9,7 @@ export const API = {
   SLIDER_FILES: `${BASE_API}items/slajder_files`,
   JAVNE_NABAVKE: `${BASE_API}items/javne_nabavke`,
   JAVNE_NABAVKE_FILES: `${BASE_API}items/javne_nabavke_files`,
+  NEWS: `${BASE_API}items/aktuelno?status=published`,
 }
 
 export const fetchAPI = (url, setState, loader, setLoader) => {

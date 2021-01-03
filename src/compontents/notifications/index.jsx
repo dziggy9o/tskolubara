@@ -36,7 +36,7 @@ export const Notifications = () => {
 
 const AutoPlayNotifications = autoPlay(SwipeableViews);
 
-const NotificationSlider = () => {
+export const NotificationSlider = () => {
   const [notifications] = useContext(NotificationContext);
   const theme                       = useTheme();
   const [activeStep, setActiveStep] = useState(0);
