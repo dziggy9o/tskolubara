@@ -6,13 +6,13 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import {autoPlay} from 'react-swipeable-views-utils';
 
-import { SliderListContext, FilesContext} from "../context";
+import {FilesContext, SliderListContext} from "../context";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 export const Slider = () => {
-  const [files] = useContext(FilesContext);
-  const [sliderList] = useContext(SliderListContext);
+  const [files]                     = useContext(FilesContext);
+  const [sliderList]                = useContext(SliderListContext);
   const theme                       = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps                    = sliderList.length;
@@ -41,15 +41,15 @@ export const Slider = () => {
         {sliderList.map((step, index) => (
           <div key={step.id}>
             {Math.abs(activeStep - index) <= 2 ?
-                files
-                  .filter(file => file.id === step.directus_files_id)
-                  .map(file => {
+              files
+                .filter(file => file.id === step.directus_files_id)
+                .map(file => {
                     return (
                       <SliderImage imgPath={file.data.full_url}/>
                     )
                   }
                 )
-             : null}
+              : null}
           </div>
         ))}
       </AutoPlaySwipeableViews>

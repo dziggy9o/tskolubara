@@ -8,6 +8,8 @@ export const SliderListContext        = createContext();
 export const JavneNabavkeContext      = createContext();
 export const JavneNabavkeFilesContext = createContext();
 export const NewsContext              = createContext();
+export const GalleryContext           = createContext();
+export const GalleryFilesContext      = createContext();
 
 export const TSProvider = props => {
   const [notifications, setNotifications]         = useState([]);
@@ -17,6 +19,8 @@ export const TSProvider = props => {
   const [javneNabavke, setJavneNabavke]           = useState([]);
   const [javneNabavkeFiles, setJavneNabavkeFiles] = useState([]);
   const [news, setNews]                           = useState([]);
+  const [gallery, setGallery]                     = useState([]);
+  const [galleryFiles, setGalleryFiles]           = useState([]);
 
 
   useEffect(() => {
@@ -25,6 +29,8 @@ export const TSProvider = props => {
     fetchAPI(API.JAVNE_NABAVKE, setJavneNabavke, false, setLoader);
     fetchAPI(API.JAVNE_NABAVKE_FILES, setJavneNabavkeFiles, false, setLoader);
     fetchAPI(API.NEWS, setNews, false, setLoader);
+    fetchAPI(API.GALLERY, setGallery, false, setLoader);
+    fetchAPI(API.GALLERY_FILES, setGalleryFiles, false, setLoader);
     fetchAPI(API.FILES, setFiles, true, setLoader);
   }, [])
 
@@ -35,7 +41,11 @@ export const TSProvider = props => {
           <JavneNabavkeContext.Provider value={[javneNabavke, setJavneNabavke]}>
             <JavneNabavkeFilesContext.Provider value={[javneNabavkeFiles, setJavneNabavkeFiles]}>
               <NewsContext.Provider value={[news, setNews]}>
-              {loader ? <LoadingPage/> : props.children}
+                <GalleryContext.Provider value={[gallery, setGallery]}>
+                  <GalleryFilesContext.Provider value={[galleryFiles, setGalleryFiles]}>
+                    {loader ? <LoadingPage/> : props.children}
+                  </GalleryFilesContext.Provider>
+                </GalleryContext.Provider>
               </NewsContext.Provider>
             </JavneNabavkeFilesContext.Provider>
           </JavneNabavkeContext.Provider>

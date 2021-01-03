@@ -7,9 +7,11 @@ export const API = {
   NOTIFICATIONS: `${BASE_API}items/obavestenja?status=published`,
   SLIDER: `${BASE_API}items/slajder`,
   SLIDER_FILES: `${BASE_API}items/slajder_files`,
-  JAVNE_NABAVKE: `${BASE_API}items/javne_nabavke`,
+  JAVNE_NABAVKE: `${BASE_API}items/javne_nabavke?status=published`,
   JAVNE_NABAVKE_FILES: `${BASE_API}items/javne_nabavke_files`,
   NEWS: `${BASE_API}items/aktuelno?status=published`,
+  GALLERY: `${BASE_API}items/galerija?status=published`,
+  GALLERY_FILES: `${BASE_API}items/galerija_files`,
 }
 
 export const fetchAPI = (url, setState, loader, setLoader) => {

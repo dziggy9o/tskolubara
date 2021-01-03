@@ -708,6 +708,41 @@ section {
   }
 }
 
+.gallery {
+  padding-top: 50px;
+  &-header {
+    background-color: $primary!important;
+  }
+  &-title {
+    color: white;
+    text-align: center;
+    font-size: 1rem!important;
+  }
+  &-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  &-footer {
+    background-color: $secondary!important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  &-card {
+    background-color: $primary!important;
+    &-img {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 300px;
+
+    }
+  }
+}
+
 .firstWord {
   &::first-letter {
     text-transform: capitalize;

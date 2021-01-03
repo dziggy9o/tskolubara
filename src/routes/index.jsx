@@ -9,6 +9,7 @@ import {
 import {JavnaNabavka} from "../compontents/pages";
 import {NewsSinglePage, NewsWidget} from "../compontents/pages/news";
 import {FilesContext, NewsContext} from "../compontents/context";
+import {Gallery} from "../compontents/pages/gallery";
 
 
 export const Routes = () => {
@@ -39,7 +40,7 @@ export const Routes = () => {
       </Route>
     ))}
     <Route exact path={'/obrazovni-profili'}>
-      <Tags title={'Образовни профили'} />
+      <Tags title={'Образовни профили'}/>
       <EducationProfileView showTitle={false}/>
     </Route>
     {EducationProfileSubList.map((route, index) =>
@@ -47,5 +48,9 @@ export const Routes = () => {
         <Tags title={route.name} description={route.details} image={route.background}/>
         <EducationProfileSinglePage {...route}/>
       </Route>)}
+    <Route exact path={'/galerija'}>
+      <Tags title={'Галерија'}/>
+      <Gallery/>
+    </Route>
   </RouterSwitch>
 }
