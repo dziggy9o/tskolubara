@@ -1,18 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import Container from "@material-ui/core/Container";
-import {
-  AppBar,
-  Backdrop,
-  Fade,
-  Grid,
-  Hidden,
-  ListItemIcon,
-  ListItemText,
-  Modal,
-  Paper,
-  TextField,
-  Toolbar
-} from "@material-ui/core";
+import {AppBar, Grid, Hidden, ListItemIcon, ListItemText, TextField, Toolbar} from "@material-ui/core";
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import {CalendarToday, ChevronRight, LocationOn, Menu, Phone, Search} from '@material-ui/icons';
@@ -45,15 +33,6 @@ export const Header = props => {
     top  : false,
     right: false,
   });
-
-  //search
-  const [openModal, setOpenModal] = useState(true);
-  const handleOpen                = () => {
-    setOpenModal(true);
-  };
-  const handleClose               = () => {
-    setOpenModal(false);
-  };
 
   const toggleDrawer = (anchor, open) => (event) => {
     if(event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -133,23 +112,23 @@ export const Header = props => {
             <ButtonGroup aria-label="outlined primary button group">
               <a href={'https://goo.gl/maps/D74WkZwaxDupgUWp6'} target={'new'}
               >
-              <Button
-                size="small"
-                startIcon={<LocationOn/>}
-              ><Hidden smDown>
-                Доситеја Обрадовића бр.6 Лазаревац
-              </Hidden>
-              </Button>
+                <Button
+                  size="small"
+                  startIcon={<LocationOn/>}
+                ><Hidden smDown>
+                  Доситеја Обрадовића бр.6 Лазаревац
+                </Hidden>
+                </Button>
               </a>
               <a href={'tel:+381118123249'}>
-              <Button
-                size="small"
-                startIcon={<Phone/>}
-              >
-                <Hidden smDown>
-                  011/8123-249
-                </Hidden>
-              </Button>
+                <Button
+                  size="small"
+                  startIcon={<Phone/>}
+                >
+                  <Hidden smDown>
+                    011/8123-249
+                  </Hidden>
+                </Button>
               </a>
             </ButtonGroup>
             <ButtonGroup style={{marginLeft: 'auto'}} aria-label="outlined primary button group">
@@ -219,35 +198,10 @@ const MenuItem = ({label, to, AOWE}) => {
   )
 }
 
-const SearchModal = props => {
-  return (
-    <Modal
-      aria-labelledby="transition-modal-title"
-      aria-describedby="transition-modal-description"
-      classes={{root: 'search-modal'}}
-      open={props.open}
-      onClose={props.close}
-      closeAfterTransition
-      BackdropComponent={Backdrop}
-      BackdropProps={{
-        timeout: 500,
-      }}
-    >
-      <Fade in={props.open}>
-        <Paper classes={{root: 'search-modal-content'}}>
-          <TextField classes={{root: 'search-field'}} size={'small'} id="outlined-basic" label="Претражи..." variant="outlined"/>
-          <IconButton classes={{root: 'search-modal-icon'}} size={'medium'}>
-            <Search/>
-          </IconButton>
-        </Paper>
-      </Fade>
-    </Modal>
-  )
-}
 
 export const MenuList = [
   {to: '/aktuelno', label: 'Актуелно'},
-  {to: '/obrazovni-profili', label: 'Обрзовни профили'},
+  {to: '/obrazovni-profili', label: 'Обaрзовни профили'},
   {to: '/ucenici', label: 'Ученици'},
   {to: '/vanredni', label: 'Ванредни'},
   {to: '/galerija', label: 'Галерија'},

@@ -1,5 +1,5 @@
 import React, {forwardRef, useContext, useState} from 'react';
-import {makeStyles, useTheme} from '@material-ui/core/styles';
+import {useTheme} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import AppBar from '@material-ui/core/AppBar';
@@ -13,13 +13,6 @@ import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 import {FilesContext, GalleryContext, GalleryFilesContext} from "../../context";
 
-
-const useStyles = makeStyles((theme) => ({
-  title: {
-    marginLeft: theme.spacing(2),
-    flex      : 1,
-  },
-}));
 
 const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -38,11 +31,11 @@ export const Gallery = () => {
             let filteredGalleryFiles = gallery_files.filter(gf => gf.galerija_id === item.id)
             let filteredFiles        = filteredGalleryFiles.map(fgf => files.filter(file => fgf.directus_files_id === file.id));
             let finalFiles           = [];
-            let coverPic = files.filter(cover => cover.id === item.cover);
+            let coverPic             = files.filter(cover => cover.id === item.cover);
             filteredFiles.forEach(element => finalFiles.push(Object.assign({}, ...element)));
             return (
               <Grid item xs={12} lg={3} md={6}>
-                <GalleryItem {...item} galleryList={finalFiles} coverPic={coverPic[0].data.full_url} />
+                <GalleryItem {...item} galleryList={finalFiles} coverPic={coverPic[0].data.thumbnails[7].url}/>
               </Grid>
             )
           })}
@@ -53,7 +46,6 @@ export const Gallery = () => {
 }
 
 export const GalleryItem = props => {
-  const classes                     = useStyles();
   const theme                       = useTheme();
   const [open, setOpen]             = useState(false);
   const [activeStep, setActiveStep] = useState(0);
@@ -93,13 +85,13 @@ export const GalleryItem = props => {
             <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
               <CloseIcon/>
             </IconButton>
-            <Typography variant="h6" >
+            <Typography variant="h6">
               {props.naziv}
             </Typography>
           </Toolbar>
         </AppBar>
         <div>
-          <div className={'gallery-img'} style={{backgroundImage: `url(${props.galleryList[activeStep].data.full_url})`}}/>
+          <div className={'gallery-img'} style={{backgroundImage: `url(${props.galleryList[activeStep].data.thumbnails[7].url})`}}/>
           <MobileStepper
             classes={{root: 'gallery-footer'}}
             steps={maxSteps}
@@ -124,30 +116,4 @@ export const GalleryItem = props => {
   );
 }
 
-const tutorialSteps = [
-  {
-    label  : 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
-    label  : 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
-    label  : 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
-  },
-  {
-    label  : 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
-    label  : 'Goč, Serbia',
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-];
+

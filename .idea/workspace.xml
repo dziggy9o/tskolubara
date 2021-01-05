@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/scrolltotop.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="created gallery">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compontents/context/api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/api.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/context/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compontents/slider/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/slider/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tskolubara.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tskolubara.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,9 @@
       <workItem from="1609012991138" duration="24642000" />
       <workItem from="1609143648824" duration="10000" />
       <workItem from="1609181926046" duration="615000" />
-      <workItem from="1609424252537" duration="63156000" />
+      <workItem from="1609424252537" duration="63181000" />
+      <workItem from="1609717231535" duration="592000" />
+      <workItem from="1609874993795" duration="4660000" />
     </task>
     <task id="LOCAL-00001" summary="Added Header, Footer, middle">
       <created>1609013089610</created>
@@ -132,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609695358457</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created gallery">
+      <created>1609716443816</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609716443816</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +153,7 @@
     <MESSAGE value="Etc" />
     <MESSAGE value="added news and edu profiles" />
     <MESSAGE value="added some things" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some things" />
+    <MESSAGE value="created gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="created gallery" />
   </component>
 </project>

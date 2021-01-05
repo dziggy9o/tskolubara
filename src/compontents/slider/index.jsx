@@ -45,7 +45,7 @@ export const Slider = () => {
                 .filter(file => file.id === step.directus_files_id)
                 .map(file => {
                     return (
-                      <SliderImage imgPath={file.data.full_url}/>
+                      <SliderImage imgPath={file.data.thumbnails[7].url}/>
                     )
                   }
                 )

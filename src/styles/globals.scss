@@ -424,7 +424,7 @@ section {
 
   &-description {
     background-color: $primary;
-    height: 240px;
+    height: 280px;
 
     .whiteColor {
       color: white;
@@ -592,6 +592,7 @@ section {
       h5 {
         color: $secondary;
         text-align: center;
+        height: 100px;
       }
 
       h6 {

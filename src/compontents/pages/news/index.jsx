@@ -36,7 +36,7 @@ export const NewsCard = props => {
       {props.slika ? props.files
         .filter(file => file.id === props.slika)
         .map((item, index) =>
-          <div key={index} className={'news-widget-picture'} style={{backgroundImage: `url(${item.data.full_url})`}}/>
+          <div key={index} className={'news-widget-picture'} style={{backgroundImage: `url(${item.data.thumbnails[7].url})`}}/>
         ) : <div className={'news-widget-picture'} style={{backgroundImage: `url('/images/no_image.jpg')`}}/>}
       <Chip classes={{root: 'news-widget-date'}} label={props.datumFormatiran}/>
       <CardContent classes={{root: 'news-widget-description'}}>
@@ -63,7 +63,7 @@ export const NewsSinglePage = props => {
       {props.slika ? props.files
         .filter(file => file.id === props.slika)
         .map((item, index) =>
-          <div key={index} className={'news-singlePage-picture'} style={{backgroundImage: `url(${item.data.full_url})`}}/>
+          <div key={index} className={'news-singlePage-picture'} style={{backgroundImage: `url(${item.data.thumbnails[7].url})`}}/>
         ) : <div  className={'news-singlePage-picture'} style={{backgroundImage: `url('/images/no_image.jpg')`}}/>}
       <Container maxWidth={'lg'}  classes={{root: 'news-singlePage-content'}}>
         <Typography classes={{root: 'news-singlePage-content-title'}} variant={'h5'}>{props.naslov}</Typography>
