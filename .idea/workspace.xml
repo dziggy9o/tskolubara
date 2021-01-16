@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="created gallery">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="fixed api and etc">
+      <change afterPath="$PROJECT_DIR$/src/compontents/pages/extraordinary.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/pages/students.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/search/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/search/localization-convertor.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compontents/context/api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/api.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/context/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/slider/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/slider/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +23,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="but/COSV2-3089-dispo_alloc_uppercase_batch_function" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1lsmiPSBJK6jaDHxu4l6dEd2g0u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -67,7 +81,7 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v12.18.3/bin/node" />
       <envs />
       <method v="2" />
     </configuration>
@@ -89,7 +103,12 @@
       <workItem from="1609181926046" duration="615000" />
       <workItem from="1609424252537" duration="63181000" />
       <workItem from="1609717231535" duration="592000" />
-      <workItem from="1609874993795" duration="4660000" />
+      <workItem from="1609874993795" duration="22399000" />
+      <workItem from="1610316982899" duration="45000" />
+      <workItem from="1610317056940" duration="24000" />
+      <workItem from="1610349118585" duration="220000" />
+      <workItem from="1610618939672" duration="13149000" />
+      <workItem from="1610832373421" duration="1663000" />
     </task>
     <task id="LOCAL-00001" summary="Added Header, Footer, middle">
       <created>1609013089610</created>
@@ -140,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609716443816</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed api and etc">
+      <created>1609880028242</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609880028242</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +180,7 @@
     <MESSAGE value="added news and edu profiles" />
     <MESSAGE value="added some things" />
     <MESSAGE value="created gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="created gallery" />
+    <MESSAGE value="fixed api and etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed api and etc" />
   </component>
 </project>

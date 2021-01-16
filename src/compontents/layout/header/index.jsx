@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useContext, useState} from "react";
 import Container from "@material-ui/core/Container";
 import {AppBar, Grid, Hidden, ListItemIcon, ListItemText, TextField, Toolbar} from "@material-ui/core";
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import {CalendarToday, ChevronRight, LocationOn, Menu, Phone, Search} from '@material-ui/icons';
+import {CalendarToday, ChevronRight, Clear, LocationOn, Menu, Phone, Search} from '@material-ui/icons';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import {Link, useRouteMatch} from 'react-router-dom'
 import {TSLogo} from "../../../styles/svgs";
@@ -11,6 +11,8 @@ import {makeStyles} from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Drawer from "@material-ui/core/Drawer";
+import {NewsContext} from "../../context";
+import {convertLatinToCirilic, routeFixer} from "../../search/localization-convertor";
 
 const useStyles = makeStyles({
   list    : {
@@ -21,6 +23,12 @@ const useStyles = makeStyles({
   },
 });
 
+class DeleteIcon extends React.Component {
+  render() {
+    return null;
+  }
+}
+
 export const Header = props => {
   //date
   const date   = new Date();
@@ -28,11 +36,13 @@ export const Header = props => {
   const today  = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
 
   //additional menu
-  const classes           = useStyles();
-  const [state, setState] = React.useState({
+  const classes                       = useStyles();
+  const [state, setState]             = React.useState({
     top  : false,
     right: false,
   });
+  const [news]                        = useContext(NewsContext);
+  const [searchInput, setSearchInput] = useState('');
 
   const toggleDrawer = (anchor, open) => (event) => {
     if(event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -42,6 +52,7 @@ export const Header = props => {
   };
 
   const list = (anchor) => {
+    let convertedSearchInput = convertLatinToCirilic(searchInput);
     if(anchor === 'top') {
       return (
         <div
@@ -50,19 +61,43 @@ export const Header = props => {
           // onClick={toggleDrawer(anchor, false)}
           // onKeyDown={toggleDrawer(anchor, false)}
         >
-          <div className={'search-modal-content'}>
+          <div className={'search-modal-content'} style={{height: `${searchInput.length > 3 ? '100vh' : '145px'}`}}>
             <Grid container spacing={3}>
               <Grid item xs={9} md={11}>
-                <TextField classes={{root: 'search-field'}} size={'small'} id="outlined-basic" label="Претражи..." variant="outlined" type="search" fullWidth={true}/>
+                <TextField
+                  onChange={event => setSearchInput(convertLatinToCirilic(event.target.value))}
+                  classes={{root: 'search-field'}}
+                  size={'small'}
+                  id="outlined-basic"
+                  label="Претражи..."
+                  variant="outlined"
+                  type="search"
+                  fullWidth={true}
+                  value={searchInput}
+                />
               </Grid>
-              <Grid item xs={3} md={1}>
-                <IconButton classes={{root: 'search-modal-icon'}} size={'medium'}>
-                  <Search/>
+              <Grid item xs={2} md={1}>
+                <IconButton onClick={toggleDrawer(anchor, false)} classes={{root: 'search-modal-icon'}} size={'medium'}>
+                  <Clear/>
                 </IconButton>
               </Grid>
+              <Grid item xs={12}>
+                <List component="nav">
+                  {news.filter(x => (x.naslov.toLowerCase().match(searchInput.toLowerCase()))).map((item, i) => {
+                    return (
+                      <Link key={i} to={`/${routeFixer(item.alias)}`}>
+                        <ListItem onClick={toggleDrawer(anchor, false)} button classes={{root: 'whiteColor'}}>
+                          <ListItemIcon classes={{root: 'whiteColor'}}>
+                            <ChevronRight/>
+                          </ListItemIcon>
+                          <ListItemText primary={item.naslov}/>
+                        </ListItem>
+                      </Link>
+                    )
+                  })}
+                </List>
+              </Grid>
             </Grid>
-
-
           </div>
         </div>
       )
@@ -203,7 +238,12 @@ export const MenuList = [
   {to: '/aktuelno', label: 'Актуелно'},
   {to: '/obrazovni-profili', label: 'Обaрзовни профили'},
   {to: '/ucenici', label: 'Ученици'},
-  {to: '/vanredni', label: 'Ванредни'},
+  {
+    to: '/vanredni', label: 'Ванредни', list: [
+      {to: '/proba', label: 'test2'},
+      {to: '/proba', label: 'test'},
+    ]
+  },
   {to: '/galerija', label: 'Галерија'},
   {to: '/onama', label: 'О нама'},
   {to: '/javne-nabavke', label: 'Јавне набавке'}

@@ -8,13 +8,18 @@ import {
 } from "../compontents/layout/educationProfiles";
 import {JavnaNabavka} from "../compontents/pages";
 import {NewsSinglePage, NewsWidget} from "../compontents/pages/news";
-import {FilesContext, NewsContext} from "../compontents/context";
+import {ExtraordinaryContext, FilesContext, NewsContext, StudentsContext} from "../compontents/context";
 import {Gallery} from "../compontents/pages/gallery";
+import {routeFixer} from "../compontents/search/localization-convertor";
+import {ExtraordinarySinglePage, ExtraordinaryWidget} from "../compontents/pages/extraordinary";
+import {StudentSinglePage, StudentsWidget} from "../compontents/pages/students";
 
 
 export const Routes = () => {
-  const [files] = useContext(FilesContext);
-  const [news]  = useContext(NewsContext);
+  const [files]         = useContext(FilesContext);
+  const [news]          = useContext(NewsContext);
+  const [extraordinary] = useContext(ExtraordinaryContext);
+  const [students]      = useContext(StudentsContext);
 
 
   return <RouterSwitch>
@@ -34,7 +39,7 @@ export const Routes = () => {
       <NewsWidget displayedPosts={1000} showTitle={false}/>
     </Route>
     {news.map((item, index) => (
-      <Route key={index} exact path={`/${item.alias}`}>
+      <Route key={index} exact path={`/${routeFixer(item.alias)}`}>
         <Tags title={item.naslov} description={item.opis}/>
         <NewsSinglePage files={files} {...item}/>
       </Route>
@@ -52,5 +57,25 @@ export const Routes = () => {
       <Tags title={'Галерија'}/>
       <Gallery/>
     </Route>
+    <Route exact path={'/vanredni'}>
+      <Tags title={'Ванредни'}/>
+      <ExtraordinaryWidget/>
+    </Route>
+    {extraordinary.map((item, index) => (
+      <Route key={index} exact path={`/${routeFixer(item.naslov)}`}>
+        <Tags title={item.naslov} description={item.opis}/>
+        <ExtraordinarySinglePage files={files} {...item}/>
+      </Route>
+    ))}
+    <Route exact path={'/ucenici'}>
+      <Tags title={'Ученици'}/>
+      <StudentsWidget/>
+    </Route>
+    {students.map((item, index) => (
+      <Route key={index} exact path={`/${routeFixer(item.naslov)}`}>
+        <Tags title={item.naslov} description={item.opis}/>
+        <StudentSinglePage files={files} {...item}/>
+      </Route>
+    ))}
   </RouterSwitch>
 }
