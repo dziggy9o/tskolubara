@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_API = `${process.env.REACT_APP_API}`
+const BASE_API = `${process.env.REACT_APP_API_TS}`
 
 export const API = {
   FILES: `${BASE_API}files?limit=-1`,

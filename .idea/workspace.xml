@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="fixed api and etc">
-      <change afterPath="$PROJECT_DIR$/src/compontents/pages/extraordinary.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/pages/students.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/search/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/search/localization-convertor.jsx" afterDir="false" />
+    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/compontents/layout/footer/config.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/pages/aboutus.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compontents/pages/ministarstvoodbrane-widget.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compontents/context/api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/api.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/context/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/layout/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.scss" afterDir="false" />
     </list>
@@ -108,7 +107,16 @@
       <workItem from="1610317056940" duration="24000" />
       <workItem from="1610349118585" duration="220000" />
       <workItem from="1610618939672" duration="13149000" />
-      <workItem from="1610832373421" duration="1663000" />
+      <workItem from="1610832373421" duration="1842000" />
+      <workItem from="1610834961996" duration="8876000" />
+      <workItem from="1610960222942" duration="589000" />
+      <workItem from="1611054749942" duration="351000" />
+      <workItem from="1611173320790" duration="567000" />
+      <workItem from="1611415049586" duration="597000" />
+      <workItem from="1611541805150" duration="725000" />
+      <workItem from="1611568648072" duration="841000" />
+      <workItem from="1611600726023" duration="8825000" />
+      <workItem from="1611655617619" duration="532000" />
     </task>
     <task id="LOCAL-00001" summary="Added Header, Footer, middle">
       <created>1609013089610</created>
@@ -166,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609880028242</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="FINISHED">
+      <created>1610834221588</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610834221588</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +196,18 @@
     <MESSAGE value="added some things" />
     <MESSAGE value="created gallery" />
     <MESSAGE value="fixed api and etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed api and etc" />
+    <MESSAGE value="FINISHED" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINISHED" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/compontents/search/localization-convertor.jsx</url>
+          <line>67</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

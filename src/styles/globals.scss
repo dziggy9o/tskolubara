@@ -818,6 +818,7 @@ section {
 
     &-description {
       background-color: $primary;
+      height: 128px;
 
       h5 {
         color: $secondary;
@@ -893,6 +894,20 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+  }
+
+  &-img-container {
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
   }
 
   &-footer {

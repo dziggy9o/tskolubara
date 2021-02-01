@@ -2,21 +2,25 @@ import Container from "@material-ui/core/Container";
 import React from "react";
 import {
   Grid,
+  Hidden,
   List,
   ListItem,
   ListItemIcon,
   ListItemText,
-  Paper,
-  Typography,
+  Paper, Snackbar,
   TextField,
-  Hidden
+  Typography
 } from "@material-ui/core";
-import {LocationOn, Phone, Mail, ChevronRight, Send} from '@material-ui/icons'
+import {ChevronRight, LocationOn, Mail, Phone, Send} from '@material-ui/icons'
 import Button from "@material-ui/core/Button";
 import {MenuList} from "../header";
 import {Link} from "react-router-dom";
+import axios from "axios";
+import {Alert} from "@material-ui/lab";
+import {formConfig} from "./config";
 
 export const Footer = props => {
+
   return (
     <Container maxWidth={'xl'} disableGutters={true} classes={{root: 'footer'}}>
       <Container maxWidth={'xl'} disableGutters={false} classes={{root: 'top'}}>
@@ -26,30 +30,30 @@ export const Footer = props => {
               <Typography variant={'h5'} classes={{root: 'footer-title'}}>
                 Информације
               </Typography>
-              <List component="nav" >
+              <List component="nav">
                 <a href={'https://goo.gl/maps/D74WkZwaxDupgUWp6'} target={'new'}>
-                <ListItem button classes={{root: 'whiteColor'}}>
-                  <ListItemIcon classes={{root: 'whiteColor'}}>
-                    <LocationOn/>
-                  </ListItemIcon>
-                  <ListItemText primary="Доситеја Обрадовића бр.6 Лазаревац 11550"/>
-                </ListItem>
+                  <ListItem button classes={{root: 'whiteColor'}}>
+                    <ListItemIcon classes={{root: 'whiteColor'}}>
+                      <LocationOn/>
+                    </ListItemIcon>
+                    <ListItemText primary="Доситеја Обрадовића бр.6 Лазаревац 11550"/>
+                  </ListItem>
                 </a>
                 <a href={'tel:+381118123249'}>
-                <ListItem button classes={{root: 'whiteColor'}}>
-                  <ListItemIcon classes={{root: 'whiteColor'}}>
-                    <Phone/>
-                  </ListItemIcon>
-                  <ListItemText primary="011/8123-249"/>
-                </ListItem>
+                  <ListItem button classes={{root: 'whiteColor'}}>
+                    <ListItemIcon classes={{root: 'whiteColor'}}>
+                      <Phone/>
+                    </ListItemIcon>
+                    <ListItemText primary="011/8123-249"/>
+                  </ListItem>
                 </a>
                 <a href={'mailto:tskolubara@gmail.com'}>
-                <ListItem button classes={{root: 'whiteColor'}}>
-                  <ListItemIcon classes={{root: 'whiteColor'}}>
-                    <Mail/>
-                  </ListItemIcon>
-                  <ListItemText primary="tskolubara@gmail.com"/>
-                </ListItem>
+                  <ListItem button classes={{root: 'whiteColor'}}>
+                    <ListItemIcon classes={{root: 'whiteColor'}}>
+                      <Mail/>
+                    </ListItemIcon>
+                    <ListItemText primary="tskolubara@gmail.com"/>
+                  </ListItem>
                 </a>
               </List>
               <iframe
@@ -61,16 +65,16 @@ export const Footer = props => {
               <Typography variant={'h5'} classes={{root: 'footer-title'}}>
                 Брзе везе
               </Typography>
-              <List component="nav" >
+              <List component="nav">
                 {MenuList.map((item, i) => {
                   return (
                     <Link key={i} to={item.to}>
-                    <ListItem button classes={{root: 'whiteColor'}}>
-                      <ListItemIcon classes={{root: 'whiteColor'}}>
-                        <ChevronRight/>
-                      </ListItemIcon>
-                      <ListItemText primary={item.label}/>
-                    </ListItem>
+                      <ListItem button classes={{root: 'whiteColor'}}>
+                        <ListItemIcon classes={{root: 'whiteColor'}}>
+                          <ChevronRight/>
+                        </ListItemIcon>
+                        <ListItemText primary={item.label}/>
+                      </ListItem>
                     </Link>
                   )
                 })}
@@ -82,20 +86,21 @@ export const Footer = props => {
               <Typography variant={'h5'} classes={{root: 'footer-title'}}>
                 Контакт
               </Typography>
-              <form noValidate autoComplete="off">
-                <TextField classes={{root: 'contact-field'}} size={'small'} id="outlined-basic" label="Име" variant="outlined" fullWidth={true}/>
-                <TextField classes={{root: 'contact-field'}} size={'small'} id="outlined-basic" label="Презиме" variant="outlined" fullWidth={true}/>
-                <TextField classes={{root: 'contact-field'}} size={'small'} id="outlined-basic" label="Адреса електронске поште" variant="outlined" fullWidth={true}/>
-                <TextField classes={{root: 'contact-field'}} size={'small'} id="outlined-basic" label="Порука" variant="outlined" fullWidth={true} multiline rows={4}/>
-              </form>
-              <Button classes={{root: 'send-button'}}
-                variant={'contained'}
-                startIcon={<Send/>}
-              >
-                <Hidden smDown>
-                  ПОШАЉИ
-                </Hidden>
-              </Button>
+              {/*<form noValidate autoComplete="off">*/}
+              {/*  <TextField classes={{root: 'contact-field'}} size={'small'} id="outlined-basic" label="Име" variant="outlined" fullWidth={true}/>*/}
+              {/*  <TextField classes={{root: 'contact-field'}} size={'small'} id="outlined-basic" label="Презиме" variant="outlined" fullWidth={true}/>*/}
+              {/*  <TextField classes={{root: 'contact-field'}} size={'small'} id="outlined-basic" label="Адреса електронске поште" variant="outlined" fullWidth={true}/>*/}
+              {/*  <TextField classes={{root: 'contact-field'}} size={'small'} id="outlined-basic" label="Порука" variant="outlined" fullWidth={true} multiline rows={4}/>*/}
+              {/*</form>*/}
+              {/*<Button classes={{root: 'send-button'}}*/}
+              {/*        variant={'contained'}*/}
+              {/*        startIcon={<Send/>}*/}
+              {/*>*/}
+              {/*  <Hidden smDown>*/}
+              {/*    ПОШАЉИ*/}
+              {/*  </Hidden>*/}
+              {/*</Button>*/}
+              <FormLayout config={formConfig}/>
             </Paper>
           </Grid>
         </Grid>
@@ -110,4 +115,128 @@ export const Footer = props => {
       </Container>
     </Container>
   )
+}
+
+class FormLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mailSent: false,
+      error   : false
+    }
+  }
+
+  handleFormSubmit = e => {
+    e.preventDefault();
+    axios({
+      method : "post",
+      url    : `${process.env.REACT_APP_API}`,
+      headers: {"content-type": "application/json"},
+      data   : this.state
+    })
+      .then(result => {
+        if(result.data.sent) {
+          this.setState({
+            mailSent: result.data.sent
+          });
+          this.setState({error: false});
+          this.setState({
+            firstName: '',
+            lastName : '',
+            msg      : '',
+            email    : ''
+          })
+        } else {
+          this.setState({error: true});
+        }
+      })
+      .catch(error => this.setState({error: error.message}));
+  };
+
+  handleChange = (e, field) => {
+    const value        = e.target.value;
+    const updateValue  = {};
+    updateValue[field] = value;
+    this.setState(updateValue);
+  };
+
+  handleClose = (e, razlog) => {
+    if(razlog === 'clickaway') {
+      return;
+    }
+    this.setState({mailSent: false, error: false,})
+  }
+
+  render() {
+    const {successMessage, errorMessage, fieldsConfig} = this.props.config;
+
+    return (
+      <form noValidate autoComplete={'off'} action="#">
+        {fieldsConfig &&
+        fieldsConfig.map(field => {
+          return (
+            <React.Fragment key={field.id}>
+              {field.type !== "textarea" ? (
+                <React.Fragment>
+                  <TextField
+                    fullWidth
+                    classes={{root: 'contact-field'}}
+                    id='outlined-basic'
+                    variant="outlined"
+                    label={field.label}
+                    type={field.type}
+                    placeholder={field.placeholder}
+                    value={this.state[field.fieldName]}
+                    onChange={e => this.setState({[field.fieldName]: e.target.value})}
+                  />
+                </React.Fragment>
+              ) : (
+                <React.Fragment>
+                  <TextField
+                    fullWidth
+                    classes={{root: 'contact-field'}}
+                    id="outlined-basic"
+                    multiline
+                    rows={4}
+                    variant="outlined"
+                    label={field.label}
+                    type={field.type}
+                    placeholder={field.placeholder}
+                    value={this.state[field.fieldName]}
+                    onChange={e => this.setState({[field.fieldName]: e.target.value})}
+                  />
+                </React.Fragment>
+              )}
+            </React.Fragment>
+          );
+        })}
+        <Button classes={{root: 'send-button'}}
+                variant={'contained'}
+                startIcon={<Send/>}
+                onClick={e => this.handleFormSubmit(e)}
+        >
+          <Hidden smDown>
+            ПОШАЉИ
+          </Hidden>
+        </Button>
+        <div>
+          {this.state.mailSent &&
+          <Snackbar open={this.state.mailSent} autoHideDuration={6000} onClose={this.handleClose}>
+            <Alert onClose={this.handleClose} severity="success">
+              {successMessage}
+            </Alert>
+          </Snackbar>
+          }
+          {this.state.error &&
+
+          <Snackbar open={this.state.error} autoHideDuration={6000} onClose={this.handleClose}>
+            <Alert onClose={this.handleClose} severity="error">
+              {errorMessage}
+            </Alert>
+          </Snackbar>
+          }
+        </div>
+      </form>
+    )
+  }
 }

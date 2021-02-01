@@ -13,6 +13,8 @@ import {Gallery} from "../compontents/pages/gallery";
 import {routeFixer} from "../compontents/search/localization-convertor";
 import {ExtraordinarySinglePage, ExtraordinaryWidget} from "../compontents/pages/extraordinary";
 import {StudentSinglePage, StudentsWidget} from "../compontents/pages/students";
+import {AboutUs} from "../compontents/pages/aboutus";
+import {MOWidget} from "../compontents/pages/ministarstvoodbrane-widget";
 
 
 export const Routes = () => {
@@ -29,6 +31,7 @@ export const Routes = () => {
       <NewsWidget displayedPosts={8} showTitle={true}/>
       <Stats/>
       <EducationProfileView showTitle={true}/>
+      <MOWidget/>
     </Route>
     <Route exact path={'/javne-nabavke'}>
       <Tags title={'Јавне набавке'}/>
@@ -56,6 +59,11 @@ export const Routes = () => {
     <Route exact path={'/galerija'}>
       <Tags title={'Галерија'}/>
       <Gallery/>
+    </Route>
+    <Route exact path={'/onama'}>
+      <Tags title={'О нама'}/>
+      <Slider/>
+      <AboutUs/>
     </Route>
     <Route exact path={'/vanredni'}>
       <Tags title={'Ванредни'}/>
