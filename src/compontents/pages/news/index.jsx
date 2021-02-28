@@ -15,7 +15,7 @@ export const NewsWidget = props => {
     <Container maxWidth={'xl'} disableGutters={true} classes={{root: 'stats'}}>
       <Container maxWidth={'xl'}>
         {props.showTitle ?
-          <Typography classes={{root: 'news-widget-title'}} variant={'h2'} align={'center'}>Актуелно</Typography> : null}
+          <Typography classes={{root: 'news-widget-title'}} variant={'h3'} align={'center'}>Актуелно</Typography> : null}
         <Grid container spacing={3}>
           {news.slice(0, props.displayedPosts).map((item, index) => {
             let datumFormatiran = <Moment format={'DD.MM.YYYY.'}>{item.datum}</Moment>

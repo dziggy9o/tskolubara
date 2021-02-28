@@ -15,7 +15,7 @@ export const Stats = props => {
   return (
     <Container maxWidth={'xl'} disableGutters={true} classes={{root: 'stats'}}>
       <Container maxWidth={'xl'}>
-        <Typography classes={{root: 'stats-title'}} variant={'h2'} align={'center'}>Зашто баш ми?</Typography>
+        <Typography classes={{root: 'stats-title'}} variant={'h3'} align={'center'}>Зашто баш ми?</Typography>
         <Grid container spacing={3}>
           {statsList.map((item, i) => {
             return (

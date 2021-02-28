@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/compontents/layout/footer/config.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/pages/aboutus.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compontents/pages/ministarstvoodbrane-widget.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/context/api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/context/api.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/layout/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/layout/otherStuff.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/otherStuff.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/pages/extraordinary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/extraordinary.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/pages/ministarstvoodbrane-widget.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/ministarstvoodbrane-widget.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compontents/search/localization-convertor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/search/localization-convertor.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +116,15 @@
       <workItem from="1611568648072" duration="841000" />
       <workItem from="1611600726023" duration="8825000" />
       <workItem from="1611655617619" duration="532000" />
+      <workItem from="1612178160004" duration="3168000" />
+      <workItem from="1612266866764" duration="143000" />
+      <workItem from="1612638387888" duration="1288000" />
+      <workItem from="1613079151441" duration="2046000" />
+      <workItem from="1613133669395" duration="14000" />
+      <workItem from="1613337167731" duration="992000" />
+      <workItem from="1613470015842" duration="44000" />
+      <workItem from="1613943720378" duration="2803000" />
+      <workItem from="1614536498635" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="Added Header, Footer, middle">
       <created>1609013089610</created>
@@ -181,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610834221588</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="UPDATED VERSION">
+      <created>1612178271895</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612178271895</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,14 +212,15 @@
     <MESSAGE value="created gallery" />
     <MESSAGE value="fixed api and etc" />
     <MESSAGE value="FINISHED" />
-    <option name="LAST_COMMIT_MESSAGE" value="FINISHED" />
+    <MESSAGE value="UPDATED VERSION" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATED VERSION" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/compontents/search/localization-convertor.jsx</url>
-          <line>67</line>
+          <line>66</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

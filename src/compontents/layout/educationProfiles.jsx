@@ -61,7 +61,7 @@ export const EducationProfileView = props => (
   <Container maxWidth={'xl'} disableGutters={true} classes={{root: 'stats'}}>
     <Container maxWidth={'xl'}>
       {props.showTitle ?
-        <Typography classes={{root: 'education-profiles-title'}} variant={'h2'} align={'center'}>Образовни
+        <Typography classes={{root: 'education-profiles-title'}} variant={'h3'} align={'center'}>Образовни
           профили</Typography>
         : null}
       <Grid container spacing={3}>

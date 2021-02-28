@@ -1,4 +1,3 @@
-
 export const convertLatinToCirilic = (latinText) => {
   latinText = latinText.replace(/lj/g, 'љ');
   latinText = latinText.replace(/Lj/g, 'Љ');
@@ -70,7 +69,7 @@ export const convertLatinToCirilic = (latinText) => {
   latinText = latinText.replace(/;/g, 'č');
   latinText = latinText.replace(/w/g, 'њ');
   latinText = latinText.replace(/q/g, 'љ');
-  latinText = latinText.replace(/\'/g, 'ћ');
+  latinText = latinText.replace(/'/g, 'ћ');
 
   return latinText;
 }
@@ -144,10 +143,9 @@ export const convertCirilicToLatin = (cirilicText) => {
 export const localizationConverter = text => {
   let localization = window.localStorage.getItem("localization");
   console.log(localization);
-  if (localization) {
+  if(localization) {
     return convertLatinToCirilic(text);
-  }
-  else {
+  } else {
     return convertCirilicToLatin(text);
   }
 }

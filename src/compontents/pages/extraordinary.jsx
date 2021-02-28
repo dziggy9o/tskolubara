@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import Container from "@material-ui/core/Container";
-import {Button, Card, CardActions, CardContent, Chip, Grid, Hidden, Paper, Typography} from "@material-ui/core";
+import {Button, Card, CardActions, CardContent, Grid, Hidden, Paper, Typography} from "@material-ui/core";
 import {Link} from "react-router-dom";
 import {routeFixer} from "../search/localization-convertor";
 import {Visibility} from "@material-ui/icons";

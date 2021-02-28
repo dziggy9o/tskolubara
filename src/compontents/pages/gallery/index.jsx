@@ -92,7 +92,7 @@ export const GalleryItem = props => {
         </AppBar>
         <div>
           <div className={'gallery-img-container'} style={{backgroundImage: `url('/images/no_image.jpg')`}}>
-            <img src={props.galleryList[activeStep].data.thumbnails[7].url}/>
+            <img src={props.galleryList[activeStep].data.thumbnails[7].url} alt={'TS Kolubara'}/>
           </div>
           <MobileStepper
             classes={{root: 'gallery-footer'}}

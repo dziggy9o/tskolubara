@@ -23,12 +23,6 @@ const useStyles = makeStyles({
   },
 });
 
-class DeleteIcon extends React.Component {
-  render() {
-    return null;
-  }
-}
-
 export const Header = props => {
   //date
   const date   = new Date();
@@ -52,7 +46,6 @@ export const Header = props => {
   };
 
   const list = (anchor) => {
-    let convertedSearchInput = convertLatinToCirilic(searchInput);
     if(anchor === 'top') {
       return (
         <div
@@ -236,7 +229,7 @@ const MenuItem = ({label, to, AOWE}) => {
 
 export const MenuList = [
   {to: '/aktuelno', label: 'Актуелно'},
-  {to: '/obrazovni-profili', label: 'Обaрзовни профили'},
+  {to: '/obrazovni-profili', label: 'Обрaзовни профили'},
   {to: '/ucenici', label: 'Ученици'},
   {
     to: '/vanredni', label: 'Ванредни', list: [
