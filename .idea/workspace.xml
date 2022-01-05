@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="">
+    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="LATEST VERSION">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/layout/otherStuff.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/otherStuff.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/pages/extraordinary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/extraordinary.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/gallery/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/pages/ministarstvoodbrane-widget.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/ministarstvoodbrane-widget.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/pages/news/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compontents/search/localization-convertor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/search/localization-convertor.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +116,22 @@
       <workItem from="1613337167731" duration="992000" />
       <workItem from="1613470015842" duration="44000" />
       <workItem from="1613943720378" duration="2803000" />
-      <workItem from="1614536498635" duration="602000" />
+      <workItem from="1614536498635" duration="1257000" />
+      <workItem from="1614544883360" duration="1492000" />
+      <workItem from="1614587285377" duration="12000" />
+      <workItem from="1615139849624" duration="2101000" />
+      <workItem from="1615672335673" duration="874000" />
+      <workItem from="1615801029465" duration="9000" />
+      <workItem from="1616356202896" duration="4412000" />
+      <workItem from="1616404481269" duration="2000" />
+      <workItem from="1617280890833" duration="164000" />
+      <workItem from="1617281271446" duration="497000" />
+      <workItem from="1617296260502" duration="19000" />
+      <workItem from="1617390684557" duration="377000" />
+      <workItem from="1618317792368" duration="847000" />
+      <workItem from="1618513689504" duration="716000" />
+      <workItem from="1619349421187" duration="1115000" />
+      <workItem from="1619421797631" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="Added Header, Footer, middle">
       <created>1609013089610</created>
@@ -196,11 +203,30 @@
       <option name="project" value="LOCAL" />
       <updated>1612178271895</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="LATEST VERSION">
+      <created>1614540213862</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614540213862</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Header, Footer, middle" />
@@ -213,7 +239,8 @@
     <MESSAGE value="fixed api and etc" />
     <MESSAGE value="FINISHED" />
     <MESSAGE value="UPDATED VERSION" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATED VERSION" />
+    <MESSAGE value="LATEST VERSION" />
+    <option name="LAST_COMMIT_MESSAGE" value="LATEST VERSION" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
