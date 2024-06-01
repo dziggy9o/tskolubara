@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="LATEST VERSION">
+    <list default="true" id="06a7405d-fe1d-4fba-8458-72660c3e2e33" name="Default Changelist" comment="Education profiles static data update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compontents/layout/educationProfiles.jsx" afterDir="false" />
     </list>
@@ -61,6 +61,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.start.executor": "Run",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -69,12 +71,22 @@
       <recent name="$PROJECT_DIR$/src/styles" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration default="true" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -86,10 +98,15 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v12.18.3/bin/node" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v12.22.12/bin/node" />
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -155,7 +172,7 @@
       <workItem from="1619349421187" duration="1115000" />
       <workItem from="1619421797631" duration="314000" />
       <workItem from="1641406120927" duration="453000" />
-      <workItem from="1717244721795" duration="2951000" />
+      <workItem from="1717244721795" duration="3979000" />
     </task>
     <task id="LOCAL-00001" summary="Added Header, Footer, middle">
       <created>1609013089610</created>
@@ -234,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1614540213862</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Education profiles static data update">
+      <option name="closed" value="true" />
+      <created>1717247741535</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717247741535</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +288,8 @@
     <MESSAGE value="FINISHED" />
     <MESSAGE value="UPDATED VERSION" />
     <MESSAGE value="LATEST VERSION" />
-    <option name="LAST_COMMIT_MESSAGE" value="LATEST VERSION" />
+    <MESSAGE value="Education profiles static data update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Education profiles static data update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
